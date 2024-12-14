@@ -69,7 +69,12 @@ if __name__ == "__main__":
     print(l)
     input("Next? ")
   
-  print("Now go to Sidebery Settings -> Styles Editor -> Tabs, and set \"Inner Gap\" to 8px")
+  print("Now go to Sidebery Settings -> Styles Editor, and add this to the text-area on the right:")
+  print("""#root.root {--tabs-inner-gap: 8px;}
+#root:not(:hover){
+  --tabs-indent: 0;
+}""")
+
   input("Done? ")
 
   print("Now go to Sidebery Settings -> Settings -> General, and turn on \"Add preface to browser window's title if Sidebery sidebar is active\"")
